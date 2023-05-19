@@ -2,10 +2,91 @@
 <html>
 
 <head>
-    <title>Page Title</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Unit Converter</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
+  <h1 class="heading">Unit Converter</h1>
+  <div class="wrapper">
+    <label>Unit:</label>
+    <select id="unit" class="scroll">
+      <option value="centimeter">Centimeter</option>
+      <option value="meter">Meter</option>
+      <option value="kilometer">Kilometer</option>
+      <option value="inch">Inch</option>
+      <option value="feet">Feet</option>
+    </select>
+    <br>
+    <div class="amt">
+      <label for="amt">Amount:</label>
+      <input type="number" id="amt">
+      <br>
+      <button onclick="conv()" class="btn">Convert</button>
+    </div>
+    <div class="result">
+      <br>
+      Centimeter : <span id="cm"></span>
+      <br>
+      Meter : <span id="mt"></span>
+      <br>
+      Kilometer : <span id="km"></span>
+      <br>
+      Inches : <span id="in"></span>
+      <br>
+      Feet : <span id="ft"></span>
+    </div>
+  </div>
+
+  <script>
+    function conv() {
+      let unit = document.getElementById("unit").value;
+      let amt = document.getElementById("amt").value;
+      amt = Number.parseInt(amt);
+
+      if (unit == 'centimeter') {
+        document.getElementById('mt').textContent = (amt / 100);
+        document.getElementById('km').textContent = (amt / 100000);
+        document.getElementById('in').textContent = (amt / 2.54);
+        document.getElementById('ft').textContent = (amt / 30.48);
+        document.getElementById('cm').textContent = (amt);
+      }
+
+      else if (unit == 'meter') {
+        document.getElementById('cm').textContent = (amt * 100);
+        document.getElementById('km').textContent = (amt / 1000);
+        document.getElementById('in').textContent = (amt * 39.37);
+        document.getElementById('ft').textContent = (amt * 3.281);
+        document.getElementById('mt').textContent = (amt);
+      }
+
+      else if (unit == 'kilometer') {
+        document.getElementById('cm').textContent = (amt * 100000);
+        document.getElementById('mt').textContent = (amt * 1000);
+        document.getElementById('in').textContent = (amt * 39370.08);
+        document.getElementById('ft').textContent = (amt * 3280.84);
+        document.getElementById('km').textContent = (amt);
+      }
+
+      else if (unit == 'inch') {
+        document.getElementById('cm').textContent = (amt * 2.54);
+        document.getElementById('mt').textContent = (amt * 0.0254);
+        document.getElementById('km').textContent = (amt * 0.0000254);
+        document.getElementById('ft').textContent = (amt * 0.0833333);
+        document.getElementById('in').textContent = (amt);
+      }
+
+      else if (unit == 'feet') {
+        document.getElementById('cm').textContent = (amt * 30.48);
+        document.getElementById('mt').textContent = (amt * 0.3048);
+        document.getElementById('km').textContent = (amt * 0.0003048);
+        document.getElementById('in').textContent = (amt * 12);
+        document.getElementById('ft').textContent = (amt);
+      }
+    }
+  </script>
 
 </body>
 

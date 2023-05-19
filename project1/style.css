@@ -1,0 +1,36 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .heading {
+    text-align: center;
+  }
+  
+  .scroll {
+    background-color: #28e259;
+    border-radius: 5px;
+  }
+  
+  label {
+    font-family: 'Trebuchet MS', sans-serif;
+  }
+  
+  option {
+    color: #ffff;
+  }
+  
+  .wrapper {
+    width: 80%;
+    margin: auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+  }
+  
+  .amt{
+    padding-top: 10px;
+  }
+  
+  .btn{
+    margin-top: 10px;
+  }
