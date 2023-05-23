@@ -1,0 +1,28 @@
+body {
+   background-color: rgb(255, 255, 255);
+}
+
+h1{
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.container{
+border: 3px rgb(0, 0, 0);
+border-radius: 7px;
+padding: 20px;
+}
+
+.back{
+height: 60vh;
+width: 99vw;
+display: grid;
+place-items: center;
+}
+
+.ans{
+    width: auto;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
