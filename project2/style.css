@@ -1,5 +1,6 @@
 body {
-   background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(to right top, #ff92d0, #e29eec, #bdabfe, #92b6ff, #68bfff, #54b9ff, #3ab2ff, #00acff, #0093ff, #0078ff, #0056ff, #0022f9);
+    height: 96.7vh;
 }
 
 h1{
@@ -11,6 +12,10 @@ h1{
 border: 1px solid rgb(0, 0, 0);
 border-radius: 7px;
 padding: 20px;
+background-color: #ffffff;
+width: 25vw;
+height: 40vh;
+box-shadow: 35px 40px 160px #2f00ffb0;
 }
 
 .back{
@@ -24,6 +29,32 @@ place-items: center;
     width: auto;
     font-size: 16px;
     border: 1px solid #ccc;
+    background-color: #c9c9c9;
     border-radius: 4px;
-    height: 2vh;
+    height: 8vh;
+}
+
+button{
+    width: 40px;
+    height: 40px;
+    background-color: #575757;
+    color: #ffffff;
+    border-radius: 20px;
+    margin: 4;
+}
+
+.row1{
+    
+}
+
+.row2{
+
+}
+
+.row3{
+
+}
+
+.row4{
+
 }
