@@ -8,7 +8,7 @@ h1{
 }
 
 .container{
-border: 3px rgb(0, 0, 0);
+border: 1px solid rgb(0, 0, 0);
 border-radius: 7px;
 padding: 20px;
 }
@@ -25,4 +25,5 @@ place-items: center;
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    height: 2vh;
 }
